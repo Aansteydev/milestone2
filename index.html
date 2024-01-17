@@ -7,14 +7,18 @@
     <title>Gaming Quiz!</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body onload="nextQuestion(0)">
-    <main>
-        <!-- modal for the end of the quiz -->
-<div class = "modal-container" id="score-modal">
-    <div class="modal-content-container">
-
-        <h1 Congratulations! You have completed the quiz.></h1>
-        
-    <script src="assets/javascript/script.js"></script>
+<body>
+    <h1>Retro Gaming Quiz!</h1>
+    <div class="panel"></div>
+    <div class="game-quiz-container"></div>
+    <div class="question-box" id = "question"></div> 
+    <div class="game-details-container"><h1>Score : <span id="player-score"></span> / 10</h1>
+    <h1> Question : <span id="question-number"></span> / 10</h1>
+    </div>
+    <button onclick="checkans(optionA)" id="optionA">Option A </button>
+    <button onclick="checkans(optionB)" id="optionA">Option B </button>
+    <button onclick="checkans(optionC)" id="optionA">Option C </button>
+    <button onclick="checkans(optionD)" id="optionA">Option D </button>
+<script src="assets/javascript/script.js"></script>
 </body>
 </html>

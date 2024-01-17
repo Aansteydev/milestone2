@@ -83,11 +83,11 @@ const questions = [
 
     {
         question: "In what game did Sonic the Hedgehog have his first debut?",
-        optionA:"Sonic the Hedgehog",
-        optionB:"Rad Racer",
-        optionC:"Rad Mobile",
-        optionD:"Fighting Vipers",
-        correctOption:"optionC"
+        optionA: "Sonic the Hedgehog",
+        optionB: "Rad Racer",
+        optionC: "Rad Mobile",
+        optionD: "Fighting Vipers",
+        correctOption: "optionC"
     },
     {
         question: "Nintendo were founded in 1889 in Kyoto, Japan what were they famous for making at the time?",
@@ -99,11 +99,11 @@ const questions = [
     },
     {
         question: " In what year did Wario, Marios nemesis make his debut?",
-        optionA:"1992",
-        optionB:"1985",
-        optionC:"1993",
-        optionD:"1983",
-        correctOption:"optionA"
+        optionA: "1992",
+        optionB: "1985",
+        optionC: "1993",
+        optionD: "1983",
+        correctOption: "optionA"
     },
     {
         question: "Sega had a hit on it's hands with 'Nights into Dreams' for the Sega Saturn but who produced the game?",
@@ -139,11 +139,11 @@ const questions = [
     },
     {
         question: " Captain Falcon originally appeared in what game?",
-        optionA:"Earthbound",
-        optionB:"Pilot Wings",
-        optionC:"F-Zero",
-        optionD:"Star Fox",
-        correctOption:"optionC"
+        optionA: "Earthbound",
+        optionB: "Pilot Wings",
+        optionC: "F-Zero",
+        optionD: "Star Fox",
+        correctOption: "optionC"
     },
     {
         question: "Earthbound is a classic JRPG, what is the name of the series creator? ",
@@ -162,4 +162,23 @@ const questions = [
         correctOption: "optionA"
     },
 ];
+
+let shuffledQuestions = [];
+
+function sortQuestions() {
+    while (shuffledQuestions.length <= 6) {
+        const random = questions[math.floor(math.random() * questions.length)];
+        if (!shuffledQuestions.includes(random)) {
+            shuffledQuestions.push(random);
+        }
+    }
+}
+
+let questionNumber = 1;
+let correctAnswer = 0;
+let incorrectAnswer = 0;
+
+function checkAnswer() {
+    const currentQuestion = shuffledQuestions[indexNumber];
+}
 
