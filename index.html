@@ -5,20 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gaming Quiz!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600&family=Roboto+Slab:wght@400;500&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <h1>Retro Gaming Quiz!</h1>
+    <h3>How many do you know?</h3>
+   <main>
     <div class="panel"></div>
     <div class="game-quiz-container"></div>
     <div class="question-box" id = "question"></div> 
     <div class="game-details-container"><h1>Score : <span id="player-score"></span> / 10</h1>
     <h1> Question : <span id="question-number"></span> / 10</h1>
     </div>
-    <button onclick="checkans(optionA)" id="optionA">Option A </button>
-    <button onclick="checkans(optionB)" id="optionA">Option B </button>
-    <button onclick="checkans(optionC)" id="optionA">Option C </button>
-    <button onclick="checkans(optionD)" id="optionA">Option D </button>
+    <button onclick="checkans(optionA)"  id="btn"> A: </button>
+    <button onclick="checkans(optionB)"  id="btn"> B: </button>
+    <button onclick="checkans(optionC)"  id="btn"> C: </button>
+    <button onclick="checkans(optionD)"  id="btn"> D: </button>
+    </main>
 <script src="assets/javascript/script.js"></script>
 </body>
 </html>

@@ -1,5 +1,36 @@
+main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: src ('../assets/images/retrogame-quiz-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    text-align: center;
+    color: lavender;
+    font-family: 'Orbitron', sans-serif;
+}
+h3 {
+    text-align: center;
+        color: rgb(93, 93, 220);
+        font-family: 'Orbitron', sans-serif;
+} 
+
+
+
 body {
-    background-color: aqua;
+    background-color: black;
+}
+
+body,
+html {
+    height: 100%;
 }
 
 .panel {
@@ -10,7 +41,7 @@ body {
     justify-content: center;
 }
 
-.question{
+.question {
     text-align: center;
     font-size: 30px;
     width: 50%;
@@ -34,4 +65,13 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+#btn {
+    display: flex;
+    align-items: center;
+    border-color: black;
+    width: 240px;
+    height: 50px;
+    text-align: center;
 }
